@@ -1,0 +1,16 @@
+< device probing >
+1. dom0 (backend) : insmod shcomp_refer.ko
+2. domU (frontend) : insmod shcomp_offer.ko
+3. dom0 : ./1_probe.sh rshm {domU's id}
+
+< device removing >
+1. dom0 : ./2_close.sh rshm {domU's id}
+2. dom0 : xenstore-ls (To see completion of the device closing)
+	if this operation is completed, xenstore removes two directories 
+	such as "/local/domain/rshm/device/{domU's id}/0" 
+	and "/local/domain/0/backend/{domU's id}/rshm/0"
+
+rmmod operation for backend dirver is not performed.
+If it runs this operation, dom0 session does not response due to the "xenbus_unregister_driver()".
+Althrough a new ssh session is available, the backend module is not unloaded.
+
