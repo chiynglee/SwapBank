@@ -1,0 +1,20 @@
+DiskSize:	   49152 kB
+NumReads:	   33921
+NumWrites:	   45602
+FailedReads:	       0
+FailedWrites:	       0
+InvalidIO:	       0
+NotifyFree:	       0
+ZeroPages:	    2759
+GoodCompress:	      98 %
+NoCompress:	       0 %
+PagesStored:	    9528
+PagesUsed:	    1602
+OrigDataSize:	   38112 kB
+ComprDataSize:	    6097 kB
+MemUsedTotal:	    6408 kB
+Compressed pages < 20%  :       14
+Compressed pages < 40%  :      158
+Compressed pages < 60%  :     1576
+Compressed pages < 80%  :    11664
+Compressed pages < 100% :    23476
