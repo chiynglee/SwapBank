@@ -1,14 +1,14 @@
 # SwapBank
 Memory-based Swap Solution for VMs on a physical machine using compressing and sharing of pages.
 
-This code is implemented by C and refered [compcache](https://code.google.com/archive/p/compcache/) and ![zram](https://en.wikipedia.org/wiki/Zram) of linux.
+This code is a Kernel module that implemented by C and refered [compcache](https://code.google.com/archive/p/compcache/) and [zram](https://en.wikipedia.org/wiki/Zram) of linux.
 
 ## Environments
 - Hypervisor : Xen 4.0
 - Guest OS : para-virtualized Linux-2.6.32 and Linux-2.6.37.1
 
 ## Paper
-This project is published to the paper in 2013. [Paper Link](https://ieeexplore.ieee.org/document/7027336)
+This project is published to the [paper](https://ieeexplore.ieee.org/document/7027336) in 2013.
 
 ### Abstraction
 Virtualization has recently been applied to consumer electronic (CE) devices such as smart TVs and smartphones. 
